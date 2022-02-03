@@ -89,7 +89,7 @@ export default function Sidebar() {
             
             <li className="sidebarListItem" onClick={handleClick}>
               <Report className="sidebarIcon" />
-              <Link to="/login" className="link">
+              <Link to="/Login" className="link">
               Log Out
               </Link>
             </li>

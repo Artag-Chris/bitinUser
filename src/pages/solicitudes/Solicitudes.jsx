@@ -10,7 +10,7 @@ function Solicitudes() {
     const [eleccion, setEleccion] = useState("none")
     console.log(eleccion)
     return (
-        <div>
+        <div className=''>
             <Topbar />
             <div className="container">
                 <Sidebar />
