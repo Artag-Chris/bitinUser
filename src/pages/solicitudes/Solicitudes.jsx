@@ -10,10 +10,8 @@ function Solicitudes() {
     const [eleccion, setEleccion] = useState("none")
     console.log(eleccion)
     return (
-        <div className=''>
-            <Topbar />
-            <div className="container">
-                <Sidebar />
+        
+        <div className="home ">
                 <div className='container'>
                     <div className="newUser">
                         <h1 className="newUserTitle">Nueva Solicitud</h1>
@@ -32,7 +30,6 @@ function Solicitudes() {
                         {eleccion ==="detalleOrden" && <DetallarOrden />}
                     </div>
                 </div>
-            </div>
         </div>
     );
 

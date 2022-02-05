@@ -19,7 +19,7 @@ import { login, logOut } from "../../redux/apiCalls";
 export default function Sidebar() {
   const dispatch = useDispatch();
   const handleClick = (e) => {
-    e.preventDefault();
+    
     logOut();
   };
   return (

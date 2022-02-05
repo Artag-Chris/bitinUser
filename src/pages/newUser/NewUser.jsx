@@ -4,15 +4,12 @@ import "./newUser.css";
 
 export default function NewUser() {
   return (
-    <div>
-      <Topbar />
-      <div className="container">
-
-        <Sidebar />
-        <div className="newUser">
-          <h1 className="newUserTitle">Nuevo Usuario</h1>
-          <form className="newUserForm">
-            <div className="newUserItem">
+    
+    <div className="home ">
+        <div className=" container row g-0 p-1">
+          <h1 className="newUserTitle col-12">Nuevo Usuario</h1>
+          <form className="newUserForm row g-0">
+            <div className="newUserItem col">
               <label>Username</label>
               <input type="text" placeholder="Pepito Perez" />
             </div>
@@ -91,7 +88,6 @@ export default function NewUser() {
             <button className="newUserButton">Crear</button>
           </form>
         </div>
-      </div>
     </div>
         );
 }

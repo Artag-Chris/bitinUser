@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 
 function NewRegister() {
   return (
-    <div className='container'>
-      <div className="newUser">
-        <h1 className="newUserTitle">Nuevo Usuario</h1>
-        <form className="newUserForm">
-          <div className="newUserItem">
-            <label>Nombre de Usuario</label>
-            <input type="text" placeholder="Pepito Perez" />
+    <div className='home'>
+      <div className="container row g-0 p-1">
+        <h1 className="newUserTitle col-12">Nuevo Usuario</h1>
+        <form className="newUserForm row g-0">
+          <div className="newUserItem col-12 ">
+            <label className=' col'>Nombre de Usuario</label>
+            <input type="text" className='col' placeholder="Pepito Perez" />
           </div>
-          <div className="newUserItem">
+          <div className="newUserItem"> 
             <label>Nombres</label>
             <input type="text" placeholder="Pepito" />
           </div>

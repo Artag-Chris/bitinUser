@@ -36,13 +36,9 @@ console.log(cliente)
 
 
   return (
-    <div>
-      <Topbar />
-      <div className="container">
-
-        <Sidebar />
-
-        <div className="user">
+   
+<div className="home container-fluid m-0 p-n5">
+        <div className="user ">
           <div className="userTitleContainer">
             <h1 className="userTitle">Personaliza tu Perfil</h1>
             
@@ -172,7 +168,6 @@ console.log(cliente)
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
         );
 }
