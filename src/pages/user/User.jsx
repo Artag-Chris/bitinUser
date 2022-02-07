@@ -40,7 +40,7 @@ console.log(cliente)
 <div className="home container-fluid m-0 p-n5">
         <div className="user ">
           <div className="userTitleContainer">
-            <h1 className="userTitle">Personaliza tu Perfil</h1>
+            <h1 className="userTitle color--rosa">Personaliza tu Perfil</h1>
             
           </div>
           <div className="userContainer">
@@ -162,7 +162,7 @@ console.log(cliente)
                     </label>
                     <input type="file" id="file" style={{ display: "none" }} />
                   </div>
-                  <button className="userUpdateButton">Actualizar</button>
+                  <button className="userUpdateButton back--rosa">Actualizar</button>
                 </div>
               </form>
             </div>

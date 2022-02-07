@@ -16,9 +16,9 @@ export default function ProductList() {
   return (
     <div className="home ">
       <div className="home ">
-        <h2 className="text">Membresia Actual</h2>
+        <h2 className="text color--rosa">Membresia Actual</h2>
         <h3 className="text">Tu Plan  se describe aqui </h3>
-        <h2 className="text mt-5 pt-5">Membresias Y Otros Servicios</h2>
+        <h2 className="text mt-5 pt-5 color--rosa">Membresias Y Otros Servicios</h2>
         <h3 className="text">Descripcion de los servicios</h3>
       </div>
     </div>

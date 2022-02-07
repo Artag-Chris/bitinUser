@@ -50,7 +50,7 @@ const Login = () => {
         
       </button>
       <button type="button"  onClick={handleClick} className="btn   mt-1">
-        <Link to="/newregister" className="text-decoration-none">Registro </Link>
+        <Link to="/newregister" className="text-decoration-none color--rosa">Registro </Link>
       </button>
       </div>
     </div> 
