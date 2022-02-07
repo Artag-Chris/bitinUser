@@ -44,14 +44,15 @@ const Login = () => {
         onChange={(e) => setPassword(e.target.value)}
       />
      
-      <button type="button" onClick={handleClick} className="btn-lg btn-outline-primary">
-        <Link to="/">Login</Link>
+     <div className="btn-group row">
+      <button type="button" onClick={handleClick} className="btn  col " >
+        <Link to="/" className="text-decoration-none">Login</Link>
         
       </button>
-      <button type="button"  onClick={handleClick} className="btn-lg btn-outline-primary mt-1 link">
-        <Link to="/newregister">Registro </Link>
+      <button type="button"  onClick={handleClick} className="btn   mt-1">
+        <Link to="/newregister" className="text-decoration-none">Registro </Link>
       </button>
-      
+      </div>
     </div> 
   );
 };

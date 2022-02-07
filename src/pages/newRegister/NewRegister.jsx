@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./styled.css"
 
 function NewRegister() {
   return (
     <div className='home'>
       <div className="container row g-0 p-1">
-        <h1 className="newUserTitle col-12">Nuevo Usuario</h1>
-        <form className="newUserForm row g-0">
-          <div className="newUserItem col-12 ">
-            <label className=' col'>Nombre de Usuario</label>
-            <input type="text" className='col' placeholder="Pepito Perez" />
+        <h1 className="newUserTitle">Nuevo Usuario</h1>
+        <form className="newUserForm ">
+          <div className="newUserItem  ">
+            <label className=' '>Nombre de Usuario</label>
+            <input type="text" className='' placeholder="Pepito Perez" />
           </div>
           <div className="newUserItem"> 
             <label>Nombres</label>
@@ -42,6 +43,10 @@ function NewRegister() {
           <div className="newUserItem">
             <label>Direccion</label>
             <input type="text" placeholder="New York | USA" />
+          </div>
+          <div className="newUserItem"> 
+            <label>EPS</label>
+            <input type="text" placeholder="Nueva EPS" />
           </div>
           <div className="newUserItem">
             <label>Genero</label>
@@ -82,8 +87,8 @@ function NewRegister() {
 
             </div>
           </div>
-          <button className="newUserButton ">
-            <Link to="/">Crear</Link>
+          <button className=" buttom">
+            <Link to="/" className='text-decoration-none'>Crear</Link>
           </button>
         </form>
       </div>
