@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import DetalleOrdenMedica from '../modalDetalle/DetalleOrdenMedica';
+import "./newUser.css";
 
 function OrdenMedica() {
     const[numeroOrden, setNumeroOrden] = useState("")
@@ -52,7 +53,7 @@ function OrdenMedica() {
         <div className='m-5'>
             <DetalleOrdenMedica numeroOrden={numeroOrden} profesional={profesional} diagnostico={diagnostico} tipoDeOrden={tipoDeOrden} 
             fechaOrden={fechaOrden} fechaDeVencimiento={fechaDeVencimiento} fechaEsperadaEntrega={fechaEsperadaEntrega} cie_10={cie_10} />
-        <button type="button" class="newUserButton " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="newUserButton back--rosa" data-bs-toggle="modal" data-bs-target="#exampleModal">
            Enviar
         </button>
         </div>

@@ -90,7 +90,7 @@ export default function WidgetLg() {
     <div className="container p-0  h-50 ">
     
     <div className="container d-flex col">
-      <div className="container d-flex ">
+      <div className="container d-flex "style={{ height: 400, width: '100%' }}>
         <DataGrid
           className="container-fluid d-flex flex-column  p-0 m-0 "
           rows={data}

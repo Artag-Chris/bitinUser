@@ -46,7 +46,7 @@ const Login = () => {
      
      <div className="btn-group row">
       <button type="button" onClick={handleClick} className="btn  col " >
-        <Link to="/" className="text-decoration-none">Login</Link>
+        <Link to="/" className="text-decoration-none color--rosa">Login</Link>
         
       </button>
       <button type="button"  onClick={handleClick} className="btn   mt-1">

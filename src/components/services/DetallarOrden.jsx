@@ -1,4 +1,5 @@
 import React,{useState} from 'react';
+import "./newUser.css";
 
 function DetallarOrden() {
     const [numeroOrden,setNumeroOrden] = useState("")
@@ -44,7 +45,7 @@ function DetallarOrden() {
         <div className='m-5'>
             
             
-        <button type="button" class="newUserButton ">
+        <button type="button" class="newUserButton back--rosa">
            Enviar
         </button>
         </div>

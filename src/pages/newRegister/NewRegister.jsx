@@ -1,99 +1,97 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./styled.css"
 
 function NewRegister() {
-  return (
-    <div className='home'>
-      <div className="container row g-0 p-1">
-        <h1 className="newUserTitle">Nuevo Usuario</h1>
-        <form className="newUserForm ">
-          <div className="newUserItem  ">
-            <label className=' '>Nombre de Usuario</label>
-            <input type="text" className='' placeholder="Pepito Perez" />
-          </div>
-          <div className="newUserItem"> 
-            <label>Nombres</label>
-            <input type="text" placeholder="Pepito" />
-          </div>
-          <div className="newUserItem">
-            <label>Apellidos</label>
-            <input type="text" placeholder="Perez" />
-          </div>
-          <div className="newUserItem">
-            <label>Cedula</label>
-            <input type="text" placeholder="# de Cedula" />
-          </div>
-          <div className="newUserItem">
-            <label>Email</label>
-            <input type="email" placeholder="john@gmail.com" />
-          </div>
-          <div className="newUserItem">
-            <label>Fecha de Nacimiento</label>
-            <input type="date" placeholder="" />
-          </div>
-          <div className="newUserItem">
-            <label>Password</label>
-            <input type="password" placeholder="password" />
-          </div>
-          <div className="newUserItem">
-            <label>Celular</label>
-            <input type="text" placeholder="32055555" />
-          </div>
-          <div className="newUserItem">
-            <label>Direccion</label>
-            <input type="text" placeholder="New York | USA" />
-          </div>
-          <div className="newUserItem"> 
-            <label>EPS</label>
-            <input type="text" placeholder="Nueva EPS" />
-          </div>
-          <div className="newUserItem">
-            <label>Genero</label>
-            <div className="newUserGender">
-              <input type="radio" name="gender" id="male" value="Masculino" />
-              <label for="male">Masculino</label>
-              <input type="radio" name="gender" id="female" value="Femenino" />
-              <label for="female">Femenino</label>
-              <input type="radio" name="gender" id="other" value="Otro" />
-              <label for="other">Otro</label>
+  return (<div className='container'>
+      <div className="newUser">
+          <h1 className="newUserTitle color--rosa">Nuevo Usuario</h1>
+          <form className="newUserForm">
+            <div className="newUserItem">
+              <label>Nombre de Usuario</label>
+              <input type="text" placeholder="Pepito Perez" />
             </div>
-          </div>
-          <div className="newUserItem">
-            <label>Tipo de Usuario</label>
-            <div className="newUserGender">
-              <input type="radio" name="tipo_usuario" id="Admin" value="true" />
-              <label for="male">Administrador</label>
-              <input type="radio" name="tipo_usuario" id="Usuario" value="false" />
-              <label for="female">Usuario</label>
-              <input type="radio" name="tipo_usuario" id="trabajador" value="Otro" />
-              <label for="other">Trabajador</label>
+            <div className="newUserItem">
+              <label>Nombres</label>
+              <input type="text" placeholder="Pepito" />
             </div>
-          </div>
-          <div className="newUserItem">
-            <label>Activo</label>
-            <select className="newUserSelect" name="active" id="active">
-              <option value="Si">Si</option>
-              <option value="No">No</option>
-            </select>
-          </div>
-          <div className="newUserItem">
-            <label>Plan de Salud</label>
-            <div className="newUserGender">
-              <input type="radio" name="plan" id="id_plan1" value="valor1" />
-              <label for="male">Plan 1</label>
-              <input type="radio" name="plan" id="id_plan2" value="valor2" />
-              <label for="female">Plan 2</label>
-
+            <div className="newUserItem">
+              <label>Apellidos</label>
+              <input type="text" placeholder="Perez" />
             </div>
-          </div>
-          <button className=" buttom">
-            <Link to="/" className='text-decoration-none'>Crear</Link>
-          </button>
-        </form>
+            <div className="newUserItem">
+              <label>Cedula</label>
+              <input type="text" placeholder="# de Cedula" />
+            </div>
+            <div className="newUserItem">
+              <label>Email</label>
+              <input type="email" placeholder="john@gmail.com" />
+            </div>
+            <div className="newUserItem">
+              <label>Fecha de Nacimiento</label>
+              <input type="date" placeholder="" />
+            </div>
+            <div className="newUserItem">
+              <label>Password</label>
+              <input type="password" placeholder="password" />
+            </div>
+            <div className="newUserItem">
+              <label>Celular</label>
+              <input type="text" placeholder="32055555" />
+            </div>
+            <div className="newUserItem">
+              <label>Direccion</label>
+              <input type="text" placeholder="New York | USA" />
+            </div>
+            <div className="newUserItem">
+              <label>EPS</label>
+              <input type="text" placeholder="Nueva Eps" />
+            </div>
+            <div className="newUserItem">
+              <label>Genero</label>
+              <div className="newUserGender">
+                <input type="radio" name="gender" id="male" value="Masculino" />
+                <label for="male">Masculino</label>
+                <input type="radio" name="gender" id="female" value="Femenino" />
+                <label for="female">Femenino</label>
+                <input type="radio" name="gender" id="other" value="Otro" />
+                <label for="other">Otro</label>
+              </div>
+            </div>
+            <div className="newUserItem">
+              <label>Tipo de Usuario</label>
+              <div className="newUserGender">
+                <input type="radio" name="tipo_usuario" id="Admin" value="true" />
+                <label for="male">Administrador</label>
+                <input type="radio" name="tipo_usuario" id="Usuario" value="false" />
+                <label for="female">Usuario</label>
+                <input type="radio" name="tipo_usuario" id="trabajador" value="Otro" />
+                <label for="other">Trabajador</label>
+              </div>
+            </div>
+            <div className="newUserItem">
+              <label>Activo</label>
+              <select className="newUserSelect" name="active" id="active">
+                <option value="Si">Si</option>
+                <option value="No">No</option>
+              </select>
+            </div>
+            <div className="newUserItem">
+              <label>Plan de Salud</label>
+              <div className="newUserGender">
+                <input type="radio" name="plan" id="id_plan1" value="valor1" />
+                <label for="male">Plan 1</label>
+                <input type="radio" name="plan" id="id_plan2" value="valor2" />
+                <label for="female">Plan 2</label>
+               
+              </div>
+            </div>
+            <button className="newUserButton back--rosa ">
+                <Link to="/" className='text-decoration-none text-light'>Crear</Link>
+                </button>
+          </form>
+        </div>
       </div>
-    </div>
-
+    
   );
 }
 

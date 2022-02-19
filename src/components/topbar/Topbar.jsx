@@ -25,7 +25,7 @@ export default function Topbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/users" >Gestion Usuarios</Link>
+                <Link className="nav-link active" aria-current="page" to="/user" >Gestion Usuarios</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/newUser" >Gestion de Nuevos usuarios</Link>

@@ -27,41 +27,63 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/Login">
-          <Login />
-        </Route>
         <Router>
-          <Topbar />
-          <div className="container">
-            <Sidebar />
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/user">
-                <User />
-              </Route>
+          <Route path="/Login">
+            <Login />
+          </Route>
+          <Route exact path="/">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <Home />
+            </div>
+          </Route>
+          <Route path="/user">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <User />
+            </div>
+          </Route>
 
-              <Route path="/newUser">
-                <NewUser />
-              </Route>
-              <Route path="/reports">
-                <Reports />
-              </Route>
-              <Route path="/products">
-                <ProductList />
-              </Route>
-              <Route path="/solicitudes">
-                <Solicitudes />
-              </Route>
-              <Route path="/newproduct">
-                <NewProduct />
-              </Route>
-              <Route path="/newregister">
-                <NewRegister />
-              </Route>
-            </Switch>
-            </div >
+          <Route path="/newUser">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <NewUser />
+            </div>
+          </Route>
+          <Route path="/reports">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <Reports />
+            </div>
+          </Route>
+          <Route path="/products">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <ProductList />
+            </div>
+          </Route>
+          <Route path="/solicitudes">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <Solicitudes />
+            </div>
+          </Route>
+          <Route path="/newproduct">
+            <Topbar />
+            <div className="container">
+              <Sidebar />
+              <NewProduct />
+            </div>
+          </Route>
+          <Route path="/newregister">
+            <NewRegister />
+          </Route>
         </Router>
       </Switch>
     </Router>
